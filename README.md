@@ -7,3 +7,15 @@ Just a normal article site
 ## About
 
 Because we don't have enough ads on most news/article/blog sites
+
+## Developing/Running
+
+If you actually want to run this:
+
+```bash
+pnpm install
+
+pnpm dev
+```
+
+(you need to have pnpm installed)
