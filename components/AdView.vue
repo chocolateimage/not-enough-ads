@@ -142,6 +142,17 @@ async function loadAdData() {
         resizeObserver.value = new ResizeObserver(reloadSize)
         resizeObserver.value.observe(adRef.value)
     })
+
+    // Slow down site
+    setInterval(() => {
+        document.querySelectorAll("*").forEach((element1) => {
+            document.querySelectorAll("*").forEach((element2) => {
+                if (element1.className.length > 0 && element1.className == element2.className) {
+                    console.log(element1.className)
+                }
+            })
+        })
+    }, Math.floor(Math.random() * 2000))
 }
 
 onMounted(() => {
